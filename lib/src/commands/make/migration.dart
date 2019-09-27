@@ -41,7 +41,7 @@ class MigrationCommand extends Command {
     var migrationLib = new Library((migrationLib) {
       migrationLib
         ..directives.add(new Directive.import(
-            'package:angel_migration.dart/angel_migration.dart'))
+            'package:angel_migration/angel_migration.dart'))
         ..body.add(new Class((migrationClazz) {
           migrationClazz
             ..name = '${rc.pascalCase}Migration'
